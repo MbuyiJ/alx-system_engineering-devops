@@ -1,3 +1,8 @@
 #!/bin/bash
 find . -maxdepth 1 -name "*.html" -exec sh -c cp -u ../ _ {} \+
 -rw-r--r-- 1 root root 0  /tmp/file_0.html
+current_dir=$(pwd)
+parent_dir=$(dirname "$current_dir")
+    if [ ! -e "$parent_dir/$file" ] || [ "$file" -nt "$parent_dir/$file" ]; then
+        cp "$file" "$parent_dir"
+        echo "Copied $file to $parent_dir"
