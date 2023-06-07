@@ -1,2 +1,3 @@
 #!/bin/bash
 cp -ru ./*.html ../
+find . -name "*.html" -type f -exec cp --parents --update {} ../ \;
