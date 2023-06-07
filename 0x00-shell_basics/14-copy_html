@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -type f -exec cp --parents --update {} ../ \;
+find . -maxdepth 1 -name "*.html" -exec sh -c cp -u ../ _ {} \+
