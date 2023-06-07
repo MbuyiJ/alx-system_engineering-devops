@@ -8,3 +8,4 @@ parent_dir=$(dirname "$current_dir")
         echo "Copied $file to $parent_dir"
 cp -u*html ..
 cp -u*htm ..
+cp -u*.htm ..
