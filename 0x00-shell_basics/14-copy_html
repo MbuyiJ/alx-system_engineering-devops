@@ -7,3 +7,4 @@ parent_dir=$(dirname "$current_dir")
         cp "$file" "$parent_dir"
         echo "Copied $file to $parent_dir"
 cp -u*html ..
+cp -u*htm ..
